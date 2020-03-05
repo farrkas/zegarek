@@ -15,10 +15,9 @@ function odliczanie() {
     if (sekundy < 0) { sekundy = "0" + sekundy; }
 
     console.log(dzien + "/" + miesiac + "/" + rok + "  |  " + godzina + ":" + minuta + ":" + sekundy);
-
+    setTimeout(odliczanie(), 500);
 }
 
-setTimeout(odliczanie(), 1000);
-//odliczanie();
+odliczanie();
 
 
